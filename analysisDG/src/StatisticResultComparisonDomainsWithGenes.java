@@ -5,6 +5,12 @@ public class StatisticResultComparisonDomainsWithGenes {
     int maxLength = 0;
     int intervalsAmount = 0;
 
+    int closerToTheBorder = 0;
+    int crossBorder = 0;
+    int totalBorder = 0;
+    int inside = 0;
+    int other = 0;
+    int size = 0;
 
     ComparisonResult comparisonResult;
 
@@ -62,25 +68,30 @@ public class StatisticResultComparisonDomainsWithGenes {
     String printResultTable() {
         String retVal = "";
         if (!comparisonResult.numberGenesOnBorderIntervalAllSide.isEmpty()) {
-            for (String gene : comparisonResult.numberGenesOnBorderIntervalAllSide.keySet()) {
-                switch (comparisonResult.numberGenesOnBorderIntervalAllSide.get(gene)) {
-                    case 1:
-                        retVal += gene + "\t" + "0\t0\t1\n";
+            for (String gene : comparisonResult.numberGenesOnBorderIntervalAllSide.keySet())
+            {
+                switch (comparisonResult.numberGenesOnBorderIntervalAllSide.get(gene))
+                {
+                    case 1: retVal += gene + "\t" + "0\t0\t1\n";
+                        other++;
                         break;
-                    case 4:
-                        retVal += gene + "\t" + "1\t0\t0\n";
+                    case 4: retVal += gene + "\t" + "1\t0\t0\n";
+                        crossBorder++;
+                        totalBorder++;
                         break;
-                    case 5:
-                        retVal += gene + "\t" + "1\t0\t0\n";
+                    case 5: retVal += gene + "\t" + "1\t0\t0\n";
+                        crossBorder++;
+                        totalBorder++;
                         break;// border
-                    case 6:
-                        retVal += gene + "\t" + "0\t1\t0\n"; //inside
+                    case 6: retVal += gene + "\t" + "0\t1\t0\n"; //inside
+                        inside++;
                         break;
-                    case 7:
-                        retVal += gene + "\t" + "1\t1\t0\n"; // inside and closer to the border
+                    case 7: retVal += gene + "\t" + "1\t1\t0\n"; // inside and closer to the border
+                        closerToTheBorder++;
+                        totalBorder++;
                         break;
-                    case 10:
-                        retVal += gene + "\t" + "0\t0\t1\n";    // long as rest
+                    case 10: retVal += gene + "\t" + "0\t0\t1\n";    // long as rest
+                        other++;
                         break;
                 }
             }

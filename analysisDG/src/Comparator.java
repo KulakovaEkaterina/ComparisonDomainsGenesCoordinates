@@ -28,6 +28,13 @@ public class Comparator {
             }
         }
     }
+    String printInfListGenes()
+    {
+        String retVal = "";
+        PrintResult printResult = new PrintResult(epsilon);
+        retVal += printResult.printInfListGenes(results3);
+        return retVal;
+    }
     void doItCompareDomainsWithGenesOnlyBorder()
     {
         for (String name : _a1.keySet()) {

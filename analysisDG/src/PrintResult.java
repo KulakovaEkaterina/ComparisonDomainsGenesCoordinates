@@ -24,7 +24,39 @@ public class PrintResult {
         }
         return retVal;
     }
+    String printInfListGenes(LinkedList<StatisticResultComparisonDomainsWithGenes> results)
+    {
+        String retVal = "name\tonBorder\tInside\tOther\n";
+        int closerToTheBorder = 0;
+        int crossBorder = 0;
+        int totalBorder = 0;
+        int inside = 0;
+        int other = 0;
+        double size = 0;
+        for (StatisticResultComparisonDomainsWithGenes st : results) {
+            retVal += st.printResultTable();
+            closerToTheBorder += st.closerToTheBorder;
+            inside += st.inside;
+            other += st.other;
+            totalBorder += st.totalBorder;
+            crossBorder += st.crossBorder;
+            size += st.size;
+        }
+        double pTotalBorder = (totalBorder / size) * 100.0;
+        double pInside = (inside / size) * 100.0;
+        double pCrossBorder = (crossBorder/size) * 100.0;
+        double pOther = (other/size) * 100.0;
+        double pcloserToTheBorder = (closerToTheBorder/size) * 100.0;
+        //retVal += "\n\n" + pBorder + "%.2f % hit on the domain boundaries " + pInside + "%.2f % inside \n";
+        retVal += "\n\n" + String.format("%.2f", pInside) + "% inside \n"
+                + String.format("%.2f", pTotalBorder) + "% close to the border or cross\n"
+                + "\t" + String.format("%.2f", pCrossBorder) + "% crossing the border \n"
+                + "\t" + String.format("%.2f", pcloserToTheBorder) + "% close to the border \n"
+                + String.format("%.2f", pOther) + "% unknown \n"
+                + size + " total size";
 
+        return retVal;
+    }
     String printResultOnlyBorderInformation(LinkedList<StatisticResultComparisonDomainsWithGenes> results, int mark) {
         String retVal = "";
         for (StatisticResultComparisonDomainsWithGenes st : results) {

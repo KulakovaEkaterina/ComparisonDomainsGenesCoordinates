@@ -1,7 +1,7 @@
 import java.io.*;
 
 enum Command {
-    domain, domaingenes, listonborder, maketable, listlonggenes, listnamegenes, help
+    domain, domaingenes, listonborder, maketable, listlonggenes, listnamegenes, randomlistgenes, help
 }
 
 public class Main {
@@ -54,6 +54,11 @@ public class Main {
                             DataLoader.loadFromListNameFile(args[2]), ValueError);  /// listNameGenes total.HindIII.combined.domain listGeneName.txt
                     c.doItFindInformationAboutGenes();
                     cq = c.printResultInformationAboutGenes();
+                    break;
+                case randomlistgenes:
+                    c = new Comparator(DataLoader.loadDomainFile(args[1]), DataLoader.getRandomGenes(args[2], Integer.parseInt(args[5])), ValueError);
+                    c.doItCompareDomainsWithGenesOnlyBorder();
+                    cq = c.printInfListGenes();
                     break;
                 case help:
                     Help help = new Help();
