@@ -67,7 +67,9 @@ public class StatisticResultComparisonDomainsWithGenes {
 
     String printResultTable() {
         String retVal = "";
-        if (!comparisonResult.numberGenesOnBorderIntervalAllSide.isEmpty()) {
+        size = comparisonResult.numberGenesOnBorderIntervalAllSide.size();
+        if (!comparisonResult.numberGenesOnBorderIntervalAllSide.isEmpty())
+        {
             for (String gene : comparisonResult.numberGenesOnBorderIntervalAllSide.keySet())
             {
                 switch (comparisonResult.numberGenesOnBorderIntervalAllSide.get(gene))

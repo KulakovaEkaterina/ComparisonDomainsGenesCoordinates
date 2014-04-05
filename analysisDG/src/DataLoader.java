@@ -121,9 +121,15 @@ public class DataLoader {
 
     private static ArrayList<ArrayList<String>> loadArrayList(String fileName) throws FileNotFoundException {
         ArrayList<ArrayList<String>> ret = new ArrayList<ArrayList<String>>();
-        Scanner s = new Scanner(new File(fileName));
-        while (s.hasNextLine())
-            ret.add(new ArrayList<String>(Arrays.asList(s.nextLine().split("\t"))));
+        try
+        {
+            Scanner s = new Scanner(new File(fileName));
+            while (s.hasNextLine())
+                ret.add(new ArrayList<String>(Arrays.asList(s.nextLine().split("\t"))));
+        }catch  (FileNotFoundException e)
+        {
+            System.out.println("File " + fileName + " not found");
+        }
         return ret;
     }
 
