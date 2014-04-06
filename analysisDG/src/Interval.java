@@ -69,5 +69,12 @@ public class Interval {
     {
         return Math.abs(a-other.a) <= epsilon && Math.abs(b - other.b) <= epsilon;
     }
-
+    boolean closerGenes (Interval gene, int epsilon)
+    {
+        if (b < gene.a && Math.abs(gene.a - b) > epsilon) // |//////|  |______|
+            return false;
+        if (gene.b < a && Math.abs(gene.b - a) > epsilon) // |______|  |//////|
+            return false;
+        return true;
+    }
 }

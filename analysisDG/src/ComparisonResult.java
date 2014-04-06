@@ -18,6 +18,8 @@ public class ComparisonResult
     Map<Interval, ArrayList<String>> numberOfGenesIncludedInInterval = new HashMap<Interval, ArrayList<String>>();
     Map<Interval, Integer> intersectedIntervalsAmount = new HashMap<Interval, Integer>();
 
+    Map<String, ArrayList<String>> coupleGenes = new HashMap<String, ArrayList<String>>();
+
     Map<Interval, ArrayList<String>> informationAboutGenesInside = new HashMap<Interval, ArrayList<String>>();
     Map<Interval, ArrayList<String>> informationAboutGenesRight = new HashMap<Interval, ArrayList<String>>();
     Map<Interval, ArrayList<String>> informationAboutGenesLeft = new HashMap<Interval, ArrayList<String>>();

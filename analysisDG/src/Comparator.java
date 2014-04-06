@@ -56,7 +56,8 @@ public class Comparator {
 
             if (c2 != null) {
                 StatisticResultComparisonDomainsWithGenes r1 = c1.analyzeG();
-                r1.setComparisonResult(c1.findGenes(c2));
+                //r1.setComparisonResult(c1.findGenes(c2, epsilon));
+                r1.setComparisonResult(c2.findGenes(c1, epsilon));
                 results3.add(r1);
             }
         }

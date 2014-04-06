@@ -2,6 +2,7 @@
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map;
 
 public class Chromosome {
@@ -147,28 +148,46 @@ public class Chromosome {
         return comparisonResult;
     }
 
-    public ComparisonResult findGenes(Chromosome other) {
+    public ComparisonResult findGenes(Chromosome other, int epsilon) {
         ComparisonResult comparisonResult = new ComparisonResult(); // знаю имя координаты нужного гена, найти нужный домен
-        for (Interval interval : intervals) {
-            ArrayList<String> coordinatesDomainInside = new ArrayList<String>();  //contains two field start end
-            ArrayList<String> coordinatesDomainOnRight = new ArrayList<String>();
-            ArrayList<String> coordinatesDomainOnLeft = new ArrayList<String>();
-            for (Interval intervalDomain : other.intervals) {
-                if (interval.isInsideGene(intervalDomain)) {
-                    coordinatesDomainInside.add(Integer.toString(intervalDomain.a));
-                    coordinatesDomainInside.add(Integer.toString(intervalDomain.b));
-                    comparisonResult.informationAboutGenesInside.put(interval, coordinatesDomainInside);
-                } else if (intervalDomain.isRightBorder(interval)) {
-                    coordinatesDomainOnRight.add(Integer.toString(intervalDomain.a));
-                    coordinatesDomainOnRight.add(Integer.toString(intervalDomain.b));
-                    comparisonResult.informationAboutGenesRight.put(interval, coordinatesDomainOnRight);
-                } else if (intervalDomain.isLeftBorder(interval)) {
-                    coordinatesDomainOnLeft.add(Integer.toString(intervalDomain.a));
-                    coordinatesDomainOnLeft.add(Integer.toString(intervalDomain.b));
-                    comparisonResult.informationAboutGenesLeft.put(interval, coordinatesDomainOnLeft);
+        for (Interval domain: intervals)
+        {
+            for (Interval currentGene: other.intervals)
+            {
+                for (Interval otherGene: other.intervals)
+                {
+                    if (currentGene.closerGenes(otherGene, epsilon) && domain.isInsideDomain(otherGene) && domain.isInsideDomain(currentGene))
+                    { //   comparisonResult.coupleGenes.get(currentGene.name).add(otherGene.name); // для каждого гена записываем его соседние в пределах эпсилон
+                        if (!comparisonResult.coupleGenes.containsKey(currentGene.name))
+                        {
+                            comparisonResult.coupleGenes.put(currentGene.name, new ArrayList<String>());
+                        }
+                        else if (!comparisonResult.coupleGenes.get(currentGene.name).contains(otherGene.name) && !currentGene.name.equals(otherGene.name))
+                                            comparisonResult.coupleGenes.get(currentGene.name).add(otherGene.name);
+                    }
                 }
-            }
+            } // TODO:: Where find gene in domain
         }
+//        for (Interval interval : intervals) {
+//            ArrayList<String> coordinatesDomainInside = new ArrayList<String>();  //contains two field start end
+//            ArrayList<String> coordinatesDomainOnRight = new ArrayList<String>();
+//            ArrayList<String> coordinatesDomainOnLeft = new ArrayList<String>();
+//            for (Interval intervalDomain : other.intervals) {
+//                if (interval.isInsideGene(intervalDomain)) {
+//                    coordinatesDomainInside.add(Integer.toString(intervalDomain.a));
+//                    coordinatesDomainInside.add(Integer.toString(intervalDomain.b));
+//                    comparisonResult.informationAboutGenesInside.put(interval, coordinatesDomainInside);
+//                } else if (intervalDomain.isRightBorder(interval)) {
+//                    coordinatesDomainOnRight.add(Integer.toString(intervalDomain.a));
+//                    coordinatesDomainOnRight.add(Integer.toString(intervalDomain.b));
+//                    comparisonResult.informationAboutGenesRight.put(interval, coordinatesDomainOnRight);
+//                } else if (intervalDomain.isLeftBorder(interval)) {
+//                    coordinatesDomainOnLeft.add(Integer.toString(intervalDomain.a));
+//                    coordinatesDomainOnLeft.add(Integer.toString(intervalDomain.b));
+//                    comparisonResult.informationAboutGenesLeft.put(interval, coordinatesDomainOnLeft);
+//                }
+//            }
+//        }
         return comparisonResult;
     }
 

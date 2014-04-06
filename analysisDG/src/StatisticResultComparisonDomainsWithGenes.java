@@ -101,29 +101,41 @@ public class StatisticResultComparisonDomainsWithGenes {
         return retVal + "";
     }
 
-    String toStringInformationAboutGenes() {
+//    String toStringInformationAboutGenes() {
+//        String retVal = "";
+//        if (!comparisonResult.informationAboutGenesInside.isEmpty()) {
+//            for (Interval interval : comparisonResult.informationAboutGenesInside.keySet()) {
+//                retVal += interval.name + "\t" + interval + "\t" + name + "\t+\t-\t-\t" +
+//                        comparisonResult.informationAboutGenesInside.get(interval) + "\n";
+//            }
+//        }
+//        if (!comparisonResult.informationAboutGenesRight.isEmpty()) {
+//            for (Interval interval : comparisonResult.informationAboutGenesRight.keySet()) {
+//                retVal += interval.name + "\t" + interval + "\t" + name + "\t-\t+\t-\t" +
+//                        comparisonResult.informationAboutGenesRight.get(interval) + "\n";
+//            }
+//        }
+//        if (!comparisonResult.informationAboutGenesLeft.isEmpty()) {
+//            for (Interval interval : comparisonResult.informationAboutGenesLeft.keySet()) {
+//                retVal += interval.name + "\t" + interval + "\t" + name + "\t-\t-\t+\t" +
+//                        comparisonResult.informationAboutGenesLeft.get(interval) + "\n";
+//            }
+//        }
+//        return retVal;
+//    }
+    String toStringInformationAboutGenes()
+    {
         String retVal = "";
-        if (!comparisonResult.informationAboutGenesInside.isEmpty()) {
-            for (Interval interval : comparisonResult.informationAboutGenesInside.keySet()) {
-                retVal += interval.name + "\t" + interval + "\t" + name + "\t+\t-\t-\t" +
-                        comparisonResult.informationAboutGenesInside.get(interval) + "\n";
+        if (!comparisonResult.coupleGenes.isEmpty())
+        {
+            for (String gene: comparisonResult.coupleGenes.keySet())
+            {
+                retVal += gene + " " + comparisonResult.coupleGenes.get(gene) + "\n"; // + domain + categories
             }
         }
-        if (!comparisonResult.informationAboutGenesRight.isEmpty()) {
-            for (Interval interval : comparisonResult.informationAboutGenesRight.keySet()) {
-                retVal += interval.name + "\t" + interval + "\t" + name + "\t-\t+\t-\t" +
-                        comparisonResult.informationAboutGenesRight.get(interval) + "\n";
-            }
-        }
-        if (!comparisonResult.informationAboutGenesLeft.isEmpty()) {
-            for (Interval interval : comparisonResult.informationAboutGenesLeft.keySet()) {
-                retVal += interval.name + "\t" + interval + "\t" + name + "\t-\t-\t+\t" +
-                        comparisonResult.informationAboutGenesLeft.get(interval) + "\n";
-            }
-        }
+
         return retVal;
     }
-
     void setComparisonResult(ComparisonResult result) {
         comparisonResult = result;
     }
