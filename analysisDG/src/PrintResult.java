@@ -19,9 +19,16 @@ public class PrintResult {
 
     String printInformationAboutGenes(LinkedList<StatisticResultComparisonDomainsWithGenes> results) {
         String retVal = "";
+        int pairs = 0;
+        double size = 0;
         for (StatisticResultComparisonDomainsWithGenes st : results) {
             retVal += st.toStringInformationAboutGenes();
+            pairs += st.pairs;
+            size += st.size;
         }
+        double persent = (pairs / 2) / size * 100;
+        retVal += pairs / 2 + " pairs gene\n";
+        retVal += String.format("%.2f", persent) + "% of the total number ";
         return retVal;
     }
     String printInfListGenes(LinkedList<StatisticResultComparisonDomainsWithGenes> results)

@@ -11,6 +11,7 @@ public class StatisticResultComparisonDomainsWithGenes {
     int inside = 0;
     int other = 0;
     int size = 0;
+    int pairs = 0;
 
     ComparisonResult comparisonResult;
 
@@ -77,10 +78,10 @@ public class StatisticResultComparisonDomainsWithGenes {
                     case 1: retVal += gene + "\t" + "0\t0\t1\n";
                         other++;
                         break;
-                    case 4: retVal += gene + "\t" + "1\t0\t0\n";
-                        crossBorder++;
-                        totalBorder++;
-                        break;
+//                    case 4: retVal += gene + "\t" + "1\t0\t0\n";
+//                        crossBorder++;
+//                        totalBorder++;
+//                        break;
                     case 5: retVal += gene + "\t" + "1\t0\t0\n";
                         crossBorder++;
                         totalBorder++;
@@ -126,11 +127,13 @@ public class StatisticResultComparisonDomainsWithGenes {
     String toStringInformationAboutGenes()
     {
         String retVal = "";
+        size = comparisonResult.sizeGenes;
+        pairs = comparisonResult.pairs;
         if (!comparisonResult.coupleGenes.isEmpty())
         {
-            for (String gene: comparisonResult.coupleGenes.keySet())
+            for (Interval gene: comparisonResult.coupleGenes.keySet())
             {
-                retVal += gene + " " + comparisonResult.coupleGenes.get(gene) + "\n"; // + domain + categories
+                retVal +=name + " " + gene + " " + comparisonResult.coupleGenes.get(gene) + "\n"; // + domain + pairs
             }
         }
 

@@ -1,5 +1,3 @@
-import com.sun.deploy.util.ArrayUtil;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
@@ -79,41 +77,54 @@ public class DataLoader {
     public static Map<String, Chromosome> loadFromListNameFile(String fileName) throws FileNotFoundException
     {
         ArrayList<String> listUser = new ArrayList<String>();
+        ArrayList<String> listUserCase = new ArrayList<String>();
         Scanner s = new Scanner(new File(fileName));
+        char[] c;
         while (s.hasNext())
+        {
             listUser = new ArrayList<String>(Arrays.asList(s.nextLine().split(", ")));
+            for (String str : listUser)
+            {
+                str = str.toLowerCase();
+                c = str.toCharArray();
+                c[0] = Character.toUpperCase(c[0]);
+                str = String.valueOf(c);
+                listUserCase.add(str);
+            }
+        }
         ArrayList<ArrayList<String>> dataGenom = loadArrayList(nameHardcoreFile);
         ArrayList<ArrayList<String>> arrrrr = new ArrayList<ArrayList<String>>();   // <-- only needed genes with full information
         Map<String, Chromosome> chrs = getSorteredMap();
         int index = 0;
-        for (String nameGeneUser: listUser)
+        for (String nameGeneUser: listUserCase)
         {
             for (ArrayList<String> gene: dataGenom)
             {
-                if (nameGeneUser.equals(gene.get(3))) // TODO:: fix double name genes!!!!!!
+                if (nameGeneUser.equals(gene.get(3)))
                 {
                     arrrrr.add(new ArrayList<String>((gene)));
+                    break;
                 }
             }
         }
         int rowIndex = 0;
         int row = 0;
+        int countGenes = 0;
         while (arrrrr.size() != row)
         {
             Chromosome chr = new Chromosome(arrrrr.get(row).get(0));
             rowIndex = 0;
             while (arrrrr.size() > rowIndex)
             {
-                if (chr.nameChrom.equals(arrrrr.get(rowIndex).get(0)) && arrrrr.size() > rowIndex)
+                if (chr.nameChrom.equals(arrrrr.get(rowIndex).get(0)) && arrrrr.size() > rowIndex )
                 {
                     chr.addInterval(new Interval(Integer.parseInt(arrrrr.get(rowIndex).get(1)),
-                            Integer.parseInt(arrrrr.get(rowIndex).get(2)), arrrrr.get(rowIndex).get(3).toString()));
+                            Integer.parseInt(arrrrr.get(rowIndex).get(2)), arrrrr.get(rowIndex).get(3).toString())); // TODO::
 
                 }
                 rowIndex ++;
             }
             row++;
-
             chrs.put(chr.nameChrom, chr);
         }
         return chrs;

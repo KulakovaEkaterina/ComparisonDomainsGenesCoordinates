@@ -128,45 +128,67 @@ public class Chromosome {
         int Other = 1;
 
         ComparisonResult comparisonResult = new ComparisonResult();
-        for (Interval genes : other.intervals) {
-            for (Interval domain : intervals) {
-                if (genes.isRightBorder2(domain) || genes.isLeftBorder2(domain)) {
-                    intersectBorder(comparisonResult, genes);
-                } else if (genes.closerToTheRight(domain, epsilon) || genes.closerToTheLeft(domain, epsilon)) {
-                    comparisonResult.numberGenesOnBorderIntervalAllSide.put(genes.name, Closer); // <--- closer
-                } else if (genes.isInsideGene(domain)) {
-                    if (!comparisonResult.numberGenesOnBorderIntervalAllSide.containsKey(genes.name)) {
-                        comparisonResult.numberGenesOnBorderIntervalAllSide.put(genes.name, InsideNotCloser); //<--inside исключая крайние
-                    } else
-                        comparisonResult.numberGenesOnBorderIntervalAllSide.put(genes.name, CloserAndInside); // и у края и внутри
-                }
+//        for (Interval genes : other.intervals) {
+//            for (Interval domain : intervals) {
+//                if (genes.isRightBorder2(domain) || genes.isLeftBorder2(domain)) {
+//                    intersectBorder(comparisonResult, genes);
+//                } else if (genes.closerToTheRight(domain, epsilon) || genes.closerToTheLeft(domain, epsilon)) {
+//                    comparisonResult.numberGenesOnBorderIntervalAllSide.put(genes.name, CloserAndInside); // <--- closer
+//                } else if (genes.isInsideGene(domain)) {
+//                    if (!comparisonResult.numberGenesOnBorderIntervalAllSide.containsKey(genes.name)) {
+//                        comparisonResult.numberGenesOnBorderIntervalAllSide.put(genes.name, InsideNotCloser); //<--inside исключая крайние
+//                    } else
+//                        comparisonResult.numberGenesOnBorderIntervalAllSide.put(genes.name, CloserAndInside); // и у края и внутри
+//                }
+//            }
+//            if (!comparisonResult.numberGenesOnBorderIntervalAllSide.containsKey(genes.name)) {
+//                comparisonResult.numberGenesOnBorderIntervalAllSide.put(genes.name, Other);
+//            }
+//        }
+        System.out.println("Size " + other.intervals.size());
+        for (Interval genes : other.intervals)
+        {
+            for(Interval domain : intervals)
+            {
+                if (genes.isRightBorder2(domain) || genes.isLeftBorder2(domain))
+                    intersectBorder(comparisonResult, genes);                       // <--- intersected or longer
+                if (genes.closerToTheRight(domain, epsilon) || genes.closerToTheLeft(domain, epsilon))
+                    comparisonResult.numberGenesOnBorderIntervalAllSide.put(genes.name, CloserAndInside);
+                if (genes.isInsideGene(domain) && !comparisonResult.numberGenesOnBorderIntervalAllSide.containsKey(genes.name))
+                        comparisonResult.numberGenesOnBorderIntervalAllSide.put(genes.name, InsideNotCloser);
             }
-            if (!comparisonResult.numberGenesOnBorderIntervalAllSide.containsKey(genes.name)) {
+            if (!comparisonResult.numberGenesOnBorderIntervalAllSide.containsKey(genes.name))
                 comparisonResult.numberGenesOnBorderIntervalAllSide.put(genes.name, Other);
-            }
+
         }
         return comparisonResult;
     }
 
-    public ComparisonResult findGenes(Chromosome other, int epsilon) {
+    public ComparisonResult findGenes(Chromosome other) {
         ComparisonResult comparisonResult = new ComparisonResult(); // знаю имя координаты нужного гена, найти нужный домен
+        comparisonResult.sizeGenes = other.intervals.size();
+        System.out.println(other.intervals.size());
         for (Interval domain: intervals)
         {
             for (Interval currentGene: other.intervals)
             {
                 for (Interval otherGene: other.intervals)
                 {
-                    if (currentGene.closerGenes(otherGene, epsilon) && domain.isInsideDomain(otherGene) && domain.isInsideDomain(currentGene))
-                    { //   comparisonResult.coupleGenes.get(currentGene.name).add(otherGene.name); // для каждого гена записываем его соседние в пределах эпсилон
-                        if (!comparisonResult.coupleGenes.containsKey(currentGene.name))
+                    if (domain.isInsideDomain(otherGene) && domain.isInsideDomain(currentGene) && !otherGene.name.equals(currentGene.name))
+                    {
+                        comparisonResult.pairs ++;
+                        if (!comparisonResult.coupleGenes.containsKey(domain))
                         {
-                            comparisonResult.coupleGenes.put(currentGene.name, new ArrayList<String>());
+                            comparisonResult.coupleGenes.put(domain, new ArrayList<String>());
+                            comparisonResult.coupleGenes.get(domain).add(currentGene.name);
                         }
-                        else if (!comparisonResult.coupleGenes.get(currentGene.name).contains(otherGene.name) && !currentGene.name.equals(otherGene.name))
-                                            comparisonResult.coupleGenes.get(currentGene.name).add(otherGene.name);
+                        else if (!comparisonResult.coupleGenes.get(domain).contains(currentGene.name))
+                                    comparisonResult.coupleGenes.get(domain).add(currentGene.name);
+//                        else if (!comparisonResult.coupleGenes.get(currentGene.name).contains(otherGene.name) && !currentGene.name.equals(otherGene.name))
+//                                            comparisonResult.coupleGenes.get(currentGene.name).add(otherGene.name);
                     }
                 }
-            } // TODO:: Where find gene in domain
+            }
         }
 //        for (Interval interval : intervals) {
 //            ArrayList<String> coordinatesDomainInside = new ArrayList<String>();  //contains two field start end

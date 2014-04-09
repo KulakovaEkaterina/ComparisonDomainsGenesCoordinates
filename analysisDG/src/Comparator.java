@@ -57,7 +57,7 @@ public class Comparator {
             if (c2 != null) {
                 StatisticResultComparisonDomainsWithGenes r1 = c1.analyzeG();
                 //r1.setComparisonResult(c1.findGenes(c2, epsilon));
-                r1.setComparisonResult(c2.findGenes(c1, epsilon));
+                r1.setComparisonResult(c2.findGenes(c1));
                 results3.add(r1);
             }
         }
@@ -88,8 +88,7 @@ public class Comparator {
     }
     String printResultInformationAboutGenes()
     {
-        String retVal = "inDom - inside domain; RBord - crosses the right boundary; LBord - similarly \n\n";
-        retVal += "name\t[start-end]\tchromosome\tinDom\tRBord\tLBord\t[dStart, dEnd] \n";
+        String retVal = "";
         PrintResult printResult = new PrintResult(epsilon);
         retVal += printResult.printInformationAboutGenes(results3);
         return retVal;

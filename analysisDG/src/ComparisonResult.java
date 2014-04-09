@@ -10,6 +10,8 @@ public class ComparisonResult
     int epsilon;
     Interval genRichInterval;
     int countMax = 0;
+    int pairs = 0;
+    int sizeGenes = 0;
 
     Map <Interval, ArrayList<String>> numberGenesOnBorderInterval = new HashMap<Interval, ArrayList<String>>();
     Map <String, Integer> numberGenesOnBorderIntervalAllSide = new HashMap<String, Integer>();
@@ -18,7 +20,7 @@ public class ComparisonResult
     Map<Interval, ArrayList<String>> numberOfGenesIncludedInInterval = new HashMap<Interval, ArrayList<String>>();
     Map<Interval, Integer> intersectedIntervalsAmount = new HashMap<Interval, Integer>();
 
-    Map<String, ArrayList<String>> coupleGenes = new HashMap<String, ArrayList<String>>();
+    Map<Interval, ArrayList<String>> coupleGenes = new HashMap<Interval, ArrayList<String>>();
 
     Map<Interval, ArrayList<String>> informationAboutGenesInside = new HashMap<Interval, ArrayList<String>>();
     Map<Interval, ArrayList<String>> informationAboutGenesRight = new HashMap<Interval, ArrayList<String>>();
