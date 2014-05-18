@@ -64,55 +64,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="54" selection-start="2756" selection-end="2756" vertical-scroll-proportion="0.23343849" vertical-offset="770" max-vertical-offset="1513">
+            <state line="60" column="47" selection-start="3146" selection-end="3146" vertical-scroll-proportion="0.0" vertical-offset="760" max-vertical-offset="1547">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Chromosome.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Chromosome.java">
+      <file leaf-file-name="resulRandom_Fib.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resulRandom_Fib.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="169" column="51" selection-start="8467" selection-end="8467" vertical-scroll-proportion="0.0" vertical-offset="2650" max-vertical-offset="4267">
+            <state line="4024" column="17" selection-start="50870" selection-end="50870" vertical-scroll-proportion="0.0" vertical-offset="68267" max-vertical-offset="68731">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="randomList.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/randomList.txt">
+      <file leaf-file-name="resulRandom_Sp.txt" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resulRandom_Sp.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+            <state line="888" column="34" selection-start="11258" selection-end="11258" vertical-scroll-proportion="0.8081264" vertical-offset="14738" max-vertical-offset="15266">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="resultCholesterol_Fib.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resultCholesterol_Fib.txt">
+      <file leaf-file-name="Comparator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Comparator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="resultCholesterol_Sp.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resultCholesterol_Sp.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PrintResult.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PrintResult.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="75" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.0" vertical-offset="242" max-vertical-offset="1972">
+            <state line="90" column="27" selection-start="3116" selection-end="3116" vertical-scroll-proportion="0.0" vertical-offset="1530" max-vertical-offset="2261">
               <folding />
             </state>
           </provider>
@@ -121,18 +103,34 @@
       <file leaf-file-name="DataLoader.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DataLoader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="1661" selection-end="1661" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="3196">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="129" column="20" selection-start="5230" selection-end="5230" vertical-scroll-proportion="0.0" vertical-offset="2193" max-vertical-offset="3247">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="resultRhythm_Fib.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resultRhythm_Fib.txt">
+      <file leaf-file-name="Chromosome.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Chromosome.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="27" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
+            <state line="169" column="51" selection-start="8467" selection-end="8467" vertical-scroll-proportion="0.0" vertical-offset="2873" max-vertical-offset="4335">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PrintResult.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PrintResult.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="75" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="2006">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StatisticResultComparisonDomainsWithGenes.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/StatisticResultComparisonDomainsWithGenes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="61" column="156" selection-start="3303" selection-end="3303" vertical-scroll-proportion="0.0" vertical-offset="1037" max-vertical-offset="2499">
               <folding />
             </state>
           </provider>
@@ -149,17 +147,22 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/StatisticResultComparisonDomains.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Interval.java" />
         <option value="$PROJECT_DIR$/mm10.txt" />
         <option value="$PROJECT_DIR$/src/Comparator.java" />
         <option value="$PROJECT_DIR$/src/ComparisonResult.java" />
-        <option value="$PROJECT_DIR$/src/StatisticResultComparisonDomainsWithGenes.java" />
         <option value="$PROJECT_DIR$/result.txt" />
         <option value="$PROJECT_DIR$/src/Chromosome.java" />
         <option value="$PROJECT_DIR$/src/PrintResult.java" />
         <option value="$PROJECT_DIR$/src/DataLoader.java" />
         <option value="$PROJECT_DIR$/randomList.txt" />
+        <option value="$PROJECT_DIR$/result_Sp.txt" />
+        <option value="$PROJECT_DIR$/result_Fib.txt" />
+        <option value="$PROJECT_DIR$/src/Help.java" />
+        <option value="$PROJECT_DIR$/src/StatisticResultComparisonDomainsWithGenes.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/resulRandom_Fib.txt" />
+        <option value="$PROJECT_DIR$/resulRandom_Sp.txt" />
       </list>
     </option>
   </component>
@@ -194,7 +197,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -247,6 +249,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -269,7 +272,7 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Main" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="listNameGenes Fib_domains.txt randomList.txt resultCholesterol_Fib.txt" />
+      <option name="PROGRAM_PARAMETERS" value="randomListGenes Sp_domains.txt mm10.txt resulRandom_Sp.txt 1000 1000" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
@@ -409,7 +412,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1378" height="780" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -428,12 +431,12 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14904553" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2793462" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27191678" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -457,6 +460,81 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Chromosome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="169" column="51" selection-start="8467" selection-end="8467" vertical-scroll-proportion="0.0" vertical-offset="2873" max-vertical-offset="4335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PrintResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="75" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="2006">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StatisticResultComparisonDomainsWithGenes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="156" selection-start="3303" selection-end="3303" vertical-scroll-proportion="0.0" vertical-offset="1037" max-vertical-offset="2499">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="61" selection-start="1687" selection-end="1687" vertical-scroll-proportion="0.0" vertical-offset="526" max-vertical-offset="1547">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Help.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="99" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onBorderSp.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="5" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="5440" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Comparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="27" selection-start="3116" selection-end="3116" vertical-scroll-proportion="0.0" vertical-offset="1219" max-vertical-offset="2261">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="116" column="0" selection-start="4677" selection-end="4677" vertical-scroll-proportion="0.0" vertical-offset="1972" max-vertical-offset="3247">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Chromosome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="169" column="51" selection-start="8467" selection-end="8467" vertical-scroll-proportion="0.0" vertical-offset="2873" max-vertical-offset="4335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PrintResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="75" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="2006">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StatisticResultComparisonDomainsWithGenes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="156" selection-start="3303" selection-end="3303" vertical-scroll-proportion="0.0" vertical-offset="1037" max-vertical-offset="2499">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="79" column="29" selection-start="3835" selection-end="3835" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1513">
@@ -466,16 +544,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/randomList.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/result.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="17" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="1190">
-          <folding />
-        </state>
+        <state line="5" column="17" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="1190" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Comparator.java">
@@ -550,16 +624,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ComparisonResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/StatisticResultComparisonDomains.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/StatisticResultComparisonDomainsWithGenes.java">
@@ -576,53 +646,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StatisticResultComparisonDomains.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Interval.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="0" selection-start="2257" selection-end="2257" vertical-scroll-proportion="0.0" vertical-offset="1064" max-vertical-offset="1445">
-          <folding />
-        </state>
+        <state line="77" column="0" selection-start="2257" selection-end="2257" vertical-scroll-proportion="0.0" vertical-offset="1064" max-vertical-offset="1445" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sp_domains.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="301" column="28" selection-start="7224" selection-end="7224" vertical-scroll-proportion="0.0" vertical-offset="4845" max-vertical-offset="9809">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Comparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="27" selection-start="3116" selection-end="3116" vertical-scroll-proportion="0.0" vertical-offset="1219" max-vertical-offset="2261">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/StatisticResultComparisonDomainsWithGenes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="42" selection-start="6213" selection-end="6213" vertical-scroll-proportion="0.0" vertical-offset="1878" max-vertical-offset="2533">
-          <folding />
-        </state>
+        <state line="301" column="28" selection-start="7224" selection-end="7224" vertical-scroll-proportion="0.0" vertical-offset="4845" max-vertical-offset="9809" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ComparisonResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="14" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-          <folding>
-            <element signature="e#950#979#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="13" column="14" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mm10.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4059" column="32" selection-start="130674" selection-end="130674" vertical-scroll-proportion="0.0" vertical-offset="68861" max-vertical-offset="418353">
+        <state line="4059" column="32" selection-start="130674" selection-end="130674" vertical-scroll-proportion="0.0" vertical-offset="68861" max-vertical-offset="418353" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PrintResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="75" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.0" vertical-offset="242" max-vertical-offset="1972">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resultCholesterol_Sp.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resultCholesterol_Fib.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result_Fib.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="26" selection-start="39" selection-end="39" vertical-scroll-proportion="0.038724374" vertical-offset="0" max-vertical-offset="439" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result_Sp.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="27" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/randomList.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="27" selection-start="348" selection-end="348" vertical-scroll-proportion="0.29565218" vertical-offset="0" max-vertical-offset="460" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resultRhythm_Fib.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="27" selection-start="171" selection-end="171" vertical-scroll-proportion="0.14782609" vertical-offset="0" max-vertical-offset="460" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Help.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="99" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
           <folding />
         </state>
       </provider>
@@ -634,60 +722,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PrintResult.java">
+    <entry file="file://$PROJECT_DIR$/src/StatisticResultComparisonDomains.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="75" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.0" vertical-offset="242" max-vertical-offset="1972">
+        <state line="1" column="13" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Comparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="27" selection-start="3116" selection-end="3116" vertical-scroll-proportion="0.0" vertical-offset="1219" max-vertical-offset="2261">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/result.txt">
+    <entry file="file://$PROJECT_DIR$/onBorderSp.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="27" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+        <state line="13" column="5" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5440" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StatisticResultComparisonDomainsWithGenes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="156" selection-start="3303" selection-end="3303" vertical-scroll-proportion="0.0" vertical-offset="909" max-vertical-offset="2465">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onBorderFib.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="4" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="11968" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DataLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1661" selection-end="1661" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="3196">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resultRhythm_Fib.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="27" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/randomList.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resultCholesterol_Sp.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resultCholesterol_Fib.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+        <state line="129" column="20" selection-start="5230" selection-end="5230" vertical-scroll-proportion="0.0" vertical-offset="1853" max-vertical-offset="3128">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="54" selection-start="2756" selection-end="2756" vertical-scroll-proportion="0.23343849" vertical-offset="770" max-vertical-offset="1513">
+        <state line="60" column="47" selection-start="3146" selection-end="3146" vertical-scroll-proportion="0.0" vertical-offset="760" max-vertical-offset="1547">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resulRandom_Fib.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4024" column="17" selection-start="50870" selection-end="50870" vertical-scroll-proportion="0.0" vertical-offset="68267" max-vertical-offset="68731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resulRandom_Sp.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="888" column="34" selection-start="11258" selection-end="11258" vertical-scroll-proportion="0.8081264" vertical-offset="14738" max-vertical-offset="15266">
           <folding />
         </state>
       </provider>

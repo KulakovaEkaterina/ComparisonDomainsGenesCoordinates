@@ -59,7 +59,7 @@ public class StatisticResultComparisonDomainsWithGenes {
         String retVal = "";
         if (!comparisonResult.numberGenesOnBorderIntervalAllSide.isEmpty()) {
             for (String gene : comparisonResult.numberGenesOnBorderIntervalAllSide.keySet()) {
-                if (comparisonResult.numberGenesOnBorderIntervalAllSide.get(gene) == mark)
+                if (comparisonResult.numberGenesOnBorderIntervalAllSide.get(gene) == 5 || comparisonResult.numberGenesOnBorderIntervalAllSide.get(gene) == 7)
                     retVal += gene + "\n";
             }
         }
@@ -78,10 +78,6 @@ public class StatisticResultComparisonDomainsWithGenes {
                     case 1: retVal += gene + "\t" + "0\t0\t1\n";
                         other++;
                         break;
-//                    case 4: retVal += gene + "\t" + "1\t0\t0\n";
-//                        crossBorder++;
-//                        totalBorder++;
-//                        break;
                     case 5: retVal += gene + "\t" + "1\t0\t0\n";
                         crossBorder++;
                         totalBorder++;

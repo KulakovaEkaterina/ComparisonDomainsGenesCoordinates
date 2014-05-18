@@ -59,6 +59,8 @@ public class Main {
                     c = new Comparator(DataLoader.loadDomainFile(args[1]), DataLoader.getRandomGenes(args[2], Integer.parseInt(args[5])), ValueError);
                     c.doItCompareDomainsWithGenesOnlyBorder();
                     cq = c.printInfListGenes();
+//                    c.doItFindInformationAboutGenes();
+//                    cq = c.printResultInformationAboutGenes();
                     break;
                 case help:
                     Help help = new Help();
